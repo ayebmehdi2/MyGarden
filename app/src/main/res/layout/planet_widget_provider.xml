@@ -1,0 +1,53 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/widget_margin">
+
+
+    <ImageView
+        android:id="@+id/nabta"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_above="@+id/time"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/grass" />
+
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="5" />
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/widget_water_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/water_drop_blue" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FAFAFA"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="5 min"
+        android:textColor="#212121"
+        android:textSize="18sp" />
+
+</RelativeLayout>
